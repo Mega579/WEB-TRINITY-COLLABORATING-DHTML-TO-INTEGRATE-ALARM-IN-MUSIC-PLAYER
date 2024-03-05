@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm Page</title>
+    <link href="alarm.css" rel="stylesheet">
+</head>
+<body>
+    <div class="alarm">
+    <a href="index.html" alt=""><img src="images/prev.png" alt="image" rel="" class="prev"></a>
+    <label for="songSelect" class="music">Select a Song:</label>
+    <select id="songSelect">
+      <option value="musics/Bae.mp3">Bae</option>
+      <option value="musics/Bodhai Kaname.mp3">Bodhai Kaname</option>
+      <option value="musics/Dippam Dappam.mp3">Dippam Dippam</option>
+      <option value="musics/Ennai-Vittu.mp3">Ennai-Vittu</option>
+      <option value="musics/Konjam-Knojam.mp3">Konjam-Konjam</option>
+      <option value="musics/Megam-Karukatha.mp3">Megham-Karukatha</option>
+      <option value="musics/Thaai-Kelavi.mp3">Thaai-Kelavi</option>
+      <option value="musics/Thenmozhi.mp3">Thenmozhi</option>
+      <option value="musics/Vaa-Vaathi.mp3">Vaa-Vaathi</option>
+      <option value="musics/Naan Pizhai.mp3">Naan Pizhai</option>
+      <option value="musics/Private-Party.mp3">Private-Party</option>
+      <option value="musics/Rendu Kaadhal.mp3">Rendu Kaadhal</option>
+      <option value="musics/Saachitale.mp3">Saachitale</option>
+      <option value="musics/Veesum-Velichathile.mp3">Veesum-Velichathile</option>
+    </select>
+    
+    <br><br>
+    
+    <label for="alarmTime" class="time">Set Alarm Time:</label>
+    <input type="datetime-local" id="alarmTime">
+    
+    <br><br>
+    
+    <button onclick="setAlarm()">Set Alarm</button>
+    <button onclick="stopAlarm()" id="stopAlarm">Stop Alarm</button>
+</div>
+<script src="alarm.js"></script>
+</body>
+</html>
